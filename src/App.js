@@ -28,13 +28,7 @@ export default function App() {
  
   const tratarMudanca = async () => {
    
-    const user = await axios.post('http://localhost:3333/users', form);
-
-    if (user.status === 200) {
-      console.log("aew")
-    }
-
-    console.log("erro")
+    const user = await axios.post('https://al-back-end-ga.herokuapp.com/cadastrar', form);
     
    }
    
